@@ -24,4 +24,6 @@ const Coins = ({ name, id, price, symbol, marketcap, volume, image, priceChange,
         </Link>
     )
 }
+
+// 
 export default Coins
