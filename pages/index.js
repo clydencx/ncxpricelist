@@ -2,8 +2,18 @@ import Head from 'next/head';
 import SearchBar from '../components/SearchBar'
 import CoinList from '../components/CoinList';
 
+import { useState } from 'react';
+
 export default function Home({ coinsData }) {
-  console.log(coinsData);
+  const [search, setSearch] = useState('');
+
+  const filteredCoins = coinsData.filter(coin => coin.symbol.toLowerCase().includes(search.toLowerCase()));
+
+  const handleChange = e => {
+    e.preventDefault();
+    setSearch(e.target.value.toLowerCase());
+  }
+
   return (
     <>
       <Head>
@@ -11,10 +21,12 @@ export default function Home({ coinsData }) {
         <meta name="description" content="NCX Price List" />
         <link rel="icon" href="/ncx.ico" />
       </Head>
+      <header>
       <div className='coin__app'>
-        <SearchBar type='text' placeholder='Search' />
-        <CoinList coinsData={coinsData} />
+        <SearchBar type='text' placeholder='Search' onChange={handleChange} />
+        <CoinList coinsData={filteredCoins} />
       </div>
+      </header>
     </>
   )
 }
