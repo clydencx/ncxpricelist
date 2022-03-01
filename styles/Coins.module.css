@@ -11,10 +11,11 @@
     border-bottom: 1px solid #2e2e2e;
     width: 1000px;
     padding: 0rem 2rem;
+    color: white;
 }
-.coin__row:hover{
+/* .coin__row:hover{
     background: #171718;
-}
+} */
 .coin{
     display: flex;
     align-items: center;
@@ -49,6 +50,12 @@
 }
 .coin__percent{
     width: 100px;
+}
+.coin__high_24{
+    width: 110px;
+}
+.coin__low_24{
+    width: 110px;
 }
 .red{
     color: #f00606;

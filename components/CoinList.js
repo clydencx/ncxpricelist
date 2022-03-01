@@ -15,6 +15,8 @@ const CoinList = ({ coinsData }) => {
                         volume={coin.total_volume}
                         image={coin.image}
                         priceChange={coin.price_change_percentage_24h}
+                        high24={coin.high_24h}
+                        low24={coin.low_24h}
                     />
                 )
             })}
