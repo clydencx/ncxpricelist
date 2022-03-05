@@ -2,6 +2,7 @@ import Head from 'next/head';
 import SearchBar from '../components/SearchBar'
 import TableHeader from '../components/TableHeader';
 import CoinList from '../components/CoinList';
+import BitCoin from './coins/bitcoin';
 
 import { useState } from 'react';
 
@@ -29,6 +30,7 @@ export default function Home({ coinsData }) {
         <SearchBar type='text' placeholder='Search' onChange={handleChange} />
         <TableHeader />
         <CoinList coinsData={filteredCoins} />
+        <BitCoin />
       </div>
       </header>
     </>
@@ -36,7 +38,7 @@ export default function Home({ coinsData }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24%2C7d`);
+  const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1&page=1&sparkline=false&price_change_percentage=1h%2C24%2C7d`);
 
   const coinsData = await res.json();
 
