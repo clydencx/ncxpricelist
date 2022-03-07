@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import SearchBar from '../components/SearchBar'
+// import SearchBar from '../components/SearchBar'
 import TableHeader from '../components/TableHeader';
 import CoinList from '../components/CoinList';
 import Eth from './coins/eth';
 import Tether from './coins/tether';
 import Binance from './coins/binance';
 import USDCoin from './coins/usdcoin';
+import Ripple from './coins/ripple';
 
 import { useState } from 'react';
 
@@ -37,6 +38,7 @@ export default function Home({ coinsData }) {
         <Tether />
         <Binance />
         <USDCoin />
+        <Ripple />
       </div>
       </header>
     </>
