@@ -30,7 +30,7 @@ export default function Home({ coinsData }) {
       <header>
       <div className='coin__app'>
         {/* <Chart /> */}
-        <SearchBar type='text' placeholder='Search' onChange={handleChange} />
+        {/* <SearchBar type='text' placeholder='Search' onChange={handleChange} /> */}
         <TableHeader />
         <CoinList coinsData={filteredCoins} />
         <Eth />
