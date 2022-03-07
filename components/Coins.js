@@ -11,9 +11,9 @@ const Coins = ({ name, id, price, symbol, marketcap, volume, image, priceChange,
                     <p className={styles.coin__symbol}>{symbol} / <span style={{color: "gray"}}>USD</span> </p>
                     <p className={styles.coin__price}>{price.toFixed(2)}</p>
                     {priceChange < 0 ? (
-                        <p className={styles.coin__percent, styles.red}>{priceChange.toFixed(2)}%</p>
+                        <p className={styles.red}>{priceChange.toFixed(2)}%</p>
                     ) : (
-                        <p className={styles.coin__percent, styles.green}>{priceChange.toFixed(2)}%</p>
+                        <p className={styles.green}>{priceChange.toFixed(2)}%</p>
                     )}
                     <p className={styles.coin__high_24}>{high24.toFixed(2)}</p>
                     <p className={styles.coin__low_24}>{low24.toFixed(2)}</p>
