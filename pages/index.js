@@ -7,6 +7,20 @@ import Tether from './coins/tether';
 import Binance from './coins/binance';
 import USDCoin from './coins/usdcoin';
 import Ripple from './coins/ripple';
+import TerraLuna from './coins/terra-luna';
+import Solana from "./coins/solana"
+import Cardano from "./coins/cardano"
+import Avalanche2 from "./coins/avalanche-2"
+import Polkadot from "./coins/polkadot"
+import BinanceUSD from "./coins/binance-usd"
+import Doge from "./coins/doge"
+import TerraUSD from "./coins/terrausd"
+import ShibaInu from "./coins/shibainu"
+import WrappedBitcoin from "./coins/wrapped-bitcoin"
+import MaticNetwork from "./coins/matic-network"
+import CryptopComChain from "./coins/crypto-com-chain"
+import Dai from "./coins/dai"
+import Cosmos from "./coins/cosmos"
 
 import { useState } from 'react';
 
@@ -36,9 +50,23 @@ export default function Home({ coinsData }) {
         <CoinList coinsData={filteredCoins} />
         <Eth />
         <Tether />
-        <Binance />
-        <USDCoin />
-        <Ripple />
+            <Binance />
+            <USDCoin />
+            <Ripple />
+            <TerraLuna />
+            <Solana />
+            <Cardano />
+            <Avalanche2 />
+            <Polkadot />
+            <BinanceUSD />
+            <Doge />
+            <TerraUSD />
+            <ShibaInu />
+            <WrappedBitcoin />
+            <MaticNetwork />
+            <CryptopComChain />
+            <Dai />
+            <Cosmos />
       </div>
       </header>
     </>
