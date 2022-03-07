@@ -21,6 +21,36 @@ import MaticNetwork from "./coins/matic-network"
 import CryptopComChain from "./coins/crypto-com-chain"
 import Dai from "./coins/dai"
 import Cosmos from "./coins/cosmos"
+import LightCoin from "./coins/litecoin"
+import Near from "./coins/near"
+import ChainLink from "./coins/chainlink"
+import Tron from "./coins/tron"
+import FTXToken from "./coins/ftx-token"
+import StakedEther from "./coins/staked-ether"
+import BitcoinCash from "./coins/bitcoin-cash"
+import LeoToken from "./coins/leo-token"
+import Algorand from "./coins/algorand"
+import Okb from "./coins/okb"
+import Stellar from "./coins/stellar"
+import HederaGraph from "./coins/hedera"
+import Uniswap from "./coins/uniswap"
+import Decentraland from "./coins/decentraland"
+import AxieInfinity from "./coins/axie-infinity"
+import EthereumClassic from "./coins/ethereum-classic"
+import Fantom from "./coins/fantom"
+import InternetComputer from "./coins/internet-computer"
+import TheSandbox from './coins/sandbox';
+import FileCoin from './coins/filecoin';
+import Vechain from './coins/vechain';
+import CompoundEther from './coins/compound-ether';
+import Osmosis from './coins/osmosis';
+import KlayToken from './coins/klay-token';
+import ElRondERD from './coins/elrond-erd2';
+import Frax from './coins/frax';
+import Monero from './coins/monero';
+import MagicInternet from './coins/magic-internet-money';
+import ThetaToken from './coins/theta-token';
+import CompoundUSD from './coins/compound-usd';
 
 import { useState } from 'react';
 
@@ -50,23 +80,53 @@ export default function Home({ coinsData }) {
         <CoinList coinsData={filteredCoins} />
         <Eth />
         <Tether />
-            <Binance />
-            <USDCoin />
-            <Ripple />
-            <TerraLuna />
-            <Solana />
-            <Cardano />
-            <Avalanche2 />
-            <Polkadot />
-            <BinanceUSD />
-            <Doge />
-            <TerraUSD />
-            <ShibaInu />
-            <WrappedBitcoin />
-            <MaticNetwork />
-            <CryptopComChain />
-            <Dai />
-            <Cosmos />
+        <Binance />
+        <USDCoin />
+        <Ripple />
+        <TerraLuna />
+        <Solana />
+        <Cardano />
+        <Avalanche2 />
+        <Polkadot />
+        <BinanceUSD />
+        <Doge />
+        <TerraUSD />
+        <ShibaInu />
+        <WrappedBitcoin />
+        <MaticNetwork />
+        <CryptopComChain />
+        <Dai />
+        <Cosmos />
+        <LightCoin />
+        <Near />
+        <ChainLink />
+        <Tron />
+        <FTXToken />
+        <StakedEther />
+        <BitcoinCash />
+        <LeoToken />
+        <Algorand />
+        <Okb />
+        <Stellar />
+        <HederaGraph />
+        <Uniswap />
+        <Decentraland />
+        <AxieInfinity />
+        <EthereumClassic />
+        <Fantom />
+        <InternetComputer />
+        <TheSandbox />
+        <FileCoin />
+        <Vechain />
+        <CompoundEther />
+        <Osmosis />
+        <KlayToken />
+        <ElRondERD />
+        <Frax />
+        <Monero />
+        <MagicInternet />
+        <ThetaToken />
+        <CompoundUSD />
       </div>
       </header>
     </>
