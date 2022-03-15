@@ -8,12 +8,35 @@
     border-color: #0198ff;
     color: #0198ff;
     margin-right: 10px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out .2s;
+    -webkit-transition: .2s ease-in-out .2s;
   }
   
   .btn_buy:hover {
     background-color: #0198ff;
     color: white;
   }
+
+  .coin__row:hover .btn_buy{
+    opacity: 1;
+}
+
+.coin__graph{
+    opacity: 1;
+    transition: .2s ease-in-out .2s;
+    -webkit-transition: .2s ease-in-out .2s;
+}
+
+.coin__row:hover .coin__graph{
+    opacity: 0;
+}
 
   .btn_trade {
     border: 2px solid black;
@@ -38,6 +61,23 @@
       justify-content: space-between;
   }
 
+  .header__container{
+    display: flex;
+    justify-content: center;
+}
+
+.header__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #2e2e2e;
+    width: 1000px;
+    /* padding: 0rem 2rem; */
+    color: white;
+}
+
 .coin__container{
     display: flex;
     justify-content: center;
@@ -50,12 +90,12 @@
     height: 80px;
     border-bottom: 1px solid #2e2e2e;
     width: 1000px;
-    padding: 0rem 2rem;
+    /* padding: 0rem 2rem; */
     color: white;
 }
-/* .coin__row:hover{
-    background: #171718;
-} */
+.coin__row:hover{
+    background: rgba(119, 126, 144, 0.5);
+}
 .coin{
     display: flex;
     align-items: center;
@@ -114,3 +154,8 @@
     color: #13c783;
     width: 110px;
 }
+
+.coin__innerrow {
+    position: relative
+}
+
