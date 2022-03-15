@@ -21,7 +21,10 @@ function Eth() {
                     <div key={item.id} className={styles.coin__container}>
                         <div className={styles.coin__row}>
                             <div className={styles.coin__data}>
-                                <p className={styles.coin__symbol}>{item.symbol} / <span style={{color: "gray"}}>USD</span> </p>
+                                <div className={styles.icons_sym}>
+                                    <img className={styles.coin_logo} src="/icons/eth.png" />
+                                    <p className={styles.coin__symbol}>{item.symbol} / <span style={{color: "gray"}}>USD</span> </p>
+                                </div>
                                 <p className={styles.coin__price}>{item.current_price.toFixed(2)}</p>
                                 {item.price_change_percentage_24h < 0 ? (
                                     <p className={styles.red}>{item.price_change_percentage_24h.toFixed(2)}%</p>

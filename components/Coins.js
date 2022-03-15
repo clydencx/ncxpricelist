@@ -8,7 +8,10 @@ const Coins = ({ name, id, price, symbol, marketcap, volume, image, priceChange,
             <div className={styles.coin__container}>
             <div className={styles.coin__row}>
                 <div className={styles.coin__data}>
-                    <p className={styles.coin__symbol}>{symbol} / <span style={{color: "gray"}}>USD</span> </p>
+                    <div className={styles.icons_sym}>
+                        <img className={styles.coin_logo} src="/icons/btc.png" />
+                        <p className={styles.coin__symbol}>{symbol} / <span style={{color: "gray"}}>USD</span> </p>
+                    </div>
                     <p className={styles.coin__price}>{price.toFixed(2)}</p>
                     {priceChange < 0 ? (
                         <p className={styles.red}>{priceChange.toFixed(2)}%</p>
