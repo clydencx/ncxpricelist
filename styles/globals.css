@@ -3,12 +3,32 @@
   src: url('../public/Avenir\ Light.ttf');
 }
 
+@font-face {
+  font-family: poppinsBold;
+  src: url('../public/Poppins-Bold.ttf')
+}
+
+@font-face {
+  font-family: poppinsMedium;
+  src: url('../public/Poppins-Medium.ttf')
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url('../public/Poppins-Regular.ttf')
+}
+
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url('../public/Poppins-SemiBold.ttf')
+}
+
 html,
 body {
   background-color: white;
   padding: 0;
   margin: 0;
-  font-family: "avenir";
+  /* font-family: "avenir"; */
   font-size: 14px;
 }
 
@@ -19,6 +39,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 .coin_app {

@@ -9,12 +9,12 @@ const TableHeader = ({ coinsData }) => {
             <div className={styles.header__container}>
                 <div className={styles.header__row}>
                     <div className={styles.coin__data_p}>
-                        <p>Name</p>
-                        <p style={{width: "110px"}}>Price</p>
-                        <p>24h%</p>
-                        <p>Market Cap <FontAwesomeIcon icon={faCircleDollarToSlot} /></p>
-                        <p>Volume(24h) <FontAwesomeIcon icon={faChartColumn} /></p>
-                        <p>Chart</p>
+                        <p className={styles.header__name}>Name</p>
+                        <p className={styles.header__price}>Price</p>
+                        <p className={styles.header__24h}>24h%</p>
+                        <p className={styles.header__marketcap}>Market Cap <FontAwesomeIcon icon={faCircleDollarToSlot} /></p>
+                        <p className={styles.header__volume}>Volume(24h) <FontAwesomeIcon icon={faChartColumn} /></p>
+                        <p className={styles.header__chart}>Chart</p>
                         {/* <p>Action</p> */}
                     </div>
                 </div>
