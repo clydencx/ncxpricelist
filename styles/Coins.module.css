@@ -258,6 +258,7 @@
     width: 230px;
     text-align: left;
     transform: translateY(9%);
+    margin-left: 10px;
 }
 
 .coin_logo {
