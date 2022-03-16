@@ -37,6 +37,8 @@
     transform: translate(-50%, -50%);
     transition: .2s ease-in-out .2s;
     -webkit-transition: .2s ease-in-out .2s;
+    width: 96px;
+    height: 40px;
   }
   
   .btn_buy:hover {
@@ -102,31 +104,44 @@
 .header__name{
     width: 170px;
     text-align: left;
+    color: #777E90;
+    font-size: 12px;
 }
 
 .header__price{
     width: 200px;
-    text-align: center;
+    text-align: right;
+    color: #777E90;
+    font-size: 12px;
+    margin-right: 20px;
 }
 
 .header__24h{
     width: 170px;
     text-align: center;
+    color: #777E90;
+    font-size: 12px;
 }
 
 .header__marketcap{
     width: 170px;
     text-align: center;
+    color: #777E90;
+    font-size: 12px;
 }
 
 .header__volume{
     width: 170px;
     text-align: right;
+    color: #777E90;
+    font-size: 12px;
 }
 
 .header__chart{
     width: 170px;
     text-align: right;
+    color: #777E90;
+    font-size: 12px;
 }
 
 .coin__container{
@@ -190,7 +205,8 @@
     color: #23262F;
     /* font-weight: bold; */
     transform: translateY(25%);
-    text-align: left;
+    text-align: right;
+    margin-right: 30px;
 }
 .coin__volume{
     width: 155px;
@@ -233,7 +249,8 @@
 }
 
 .coin__innerrow {
-    position: relative
+    position: relative;
+    margin-right: 10px;
 }
 
 .icons_sym {
